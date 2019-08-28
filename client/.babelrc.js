@@ -1,0 +1,30 @@
+module.exports = {
+  presets: [
+    "next/babel"
+  ],
+  plugins: [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd"
+      },
+      "ant"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "react-feather",
+        "libraryDirectory": "dist/icons"
+      },
+      "react-feather"
+    ]
+  ]
+}
